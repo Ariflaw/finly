@@ -1,0 +1,44 @@
+#our_team {
+    padding: 0 0 160px;
+    text-align: center;
+
+    .team_list {
+        margin-top: 80px;
+
+        .content {
+
+            img {
+                position: relative;
+                width: 180px;
+                height: 180px;
+                border-radius: 100%;
+                overflow: hidden;
+
+                transition: all 0.35s ease-in-out;
+            }
+
+            h4 {
+                margin-top: 40px;
+                font-size: 18px;
+                color: $b;
+
+                span {
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $content;
+                    margin-top: 5px;
+                    letter-spacing: 0.6px;
+                }
+            }
+
+            &:hover, &:active, &:focus {
+
+                img {
+                    transform: scale( 1.1);
+                }
+            }
+
+        }
+    }
+}

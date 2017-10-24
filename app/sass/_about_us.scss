@@ -1,0 +1,84 @@
+#about_us {
+    padding: 180px 0;
+
+    .image-profile {
+        background-image: url('../images/image-7.jpg');
+        background-size: cover;
+        background-position: -150px 0px;
+        width: 420px;
+        height: 420px;
+        border-radius: 100%;
+        margin-right: 80px;
+        margin-left: 40px;
+    }
+
+    .title_section {
+        margin-bottom: 30px;
+    }
+
+    .desc_section {
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+
+    .media-body {
+
+        p {
+            font-size: 14px;
+            line-height: 28px;
+            letter-spacing: 0.8px;
+            font-weight: 500;
+            padding-right: 5px;
+            margin-bottom: 40px;
+        }
+
+        .image-author {
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                float: left;
+                margin-right: 20px;
+            }
+
+            p {
+                display: block;
+                font-weight: 500;
+                font-size: 18px;
+                color: $b;
+                letter-spacing: 0;
+
+                span {
+                    display: block;
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: $b;
+                    opacity: 0.3;
+                    margin-top: -5px;
+                }
+            }
+        }
+
+    }
+
+    .client-count {
+        margin-top: 120px;
+
+        h3 {
+            text-align: center;
+            font-size: 56px;
+            font-weight: 600;
+            color: $b;
+
+            span {
+                display: block;
+                font-size: 18px;
+                font-weight: 400;
+                margin-top: 10px;
+                color: $content;
+                opacity: 0.6;
+            }
+        }
+    }
+
+}

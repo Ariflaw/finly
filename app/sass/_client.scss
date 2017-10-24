@@ -1,0 +1,14 @@
+#client {
+    padding-bottom: 60px;
+
+    .content {
+        overflow: hidden;
+        text-align: center;
+        opacity: 0.5;
+
+        img {
+            max-width: 100%;
+            width: 180px;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+#portfolio {
+    position: relative;
+    overflow: hidden;
+
+
+    .image-gallery {
+        position: relative;
+        overflow: hidden;
+        height: 380px;
+
+        .overlay {
+            position: absolute;
+            bottom: -100%;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            background-color: rgba( 0, 0, 0, 0.8 );
+            transition: all 0.35s ease-in-out;
+
+            padding: 60px 40px 30px;
+            text-align: center;
+            color: $w;
+
+            h3 {
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 300;
+                letter-spacing: 0.6px;
+                line-height: 26px;
+                margin-bottom: 30px;
+            }
+
+            i {
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+                background-color: $primary;
+                color: $w;
+                border-radius: 100%;
+                line-height: 45px;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        img {
+            position: absolute;
+            max-height: 100%;
+            height: auto;
+            bottom: 0;
+            left: 0;
+
+            transition: all 0.35s ease-in-out;
+            transform: scale(1.5);
+        }
+
+        &:hover, &:active, &:focus {
+            .overlay {
+                bottom: 0;
+            }
+
+            img {
+                transition: all 5s ease-in-out;
+                transform: scale(1.8);
+            }
+        }
+    }
+
+}

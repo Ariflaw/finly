@@ -1,0 +1,62 @@
+body {
+    font-family: $font;
+    font-size: 15px;
+    font-weight: 400;
+    color: $content;
+    letter-spacing: 0.2px;
+
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.btn-default {
+    background-color: $primary;
+    color: $w;
+    text-transform: uppercase;
+}
+
+.btn,
+.btn:hover,
+.btn:active,
+.btn:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+// Section
+//////////////////////////////////////////////////////
+.header_section {
+
+    .title_section {
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+        color: $grey;
+        margin-bottom: 15px;
+    }
+
+    .desc_section {
+        color: $b;
+        font-size: 36px;
+        font-weight: 600;
+        opacity: 0.9;
+    }
+}
+
+
+
+.clearfix {
+
+
+    &::before {
+        content: '';
+        clear: both;
+    }
+
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}

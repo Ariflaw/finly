@@ -1,0 +1,103 @@
+#main_header {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    @media (min-width: 992px){
+        min-height: 800px;
+    }
+
+    background-image: url('../images/bg-header.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.65);
+        z-index: -1;
+    }
+
+    // Navbar Brand
+    ///////////////////////////////////////////////////////////
+    .navbar-brand {
+        color: $w;
+
+        span {
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+
+    // Navbar Menu
+    ///////////////////////////////////////////////////////////
+    .navbar {
+        padding-top: 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-nav {
+
+        li {
+
+            a {
+                color: $w;
+                padding: 10px 25px;
+                font-size: 16px;
+                font-weight: 500;
+                opacity: 0.9;
+            }
+        }
+
+        .btn {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 10px 30px;
+            letter-spacing: 1.5px;
+            margin-left: 25px;
+        }
+
+    }
+
+}
+
+
+#main_hero {
+    position: absolute;
+    top: 300px;
+    color: $w;
+    z-index: 1;
+
+    span {
+        font-size: 20px;
+        opacity: 0.75;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+    }
+
+    a.btn {
+        border-color: $w;
+        color: $w;
+        padding: 10px 25px;
+        outline: 0;
+        box-shadow: none;
+
+        &:hover {
+            background-color: $w;
+            color: $b;
+        }
+    }
+}
