@@ -58,3 +58,5 @@ typings/
 .env
 
 dist/
+
+.com.apple.timemachine.supported
